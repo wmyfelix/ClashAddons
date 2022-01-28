@@ -7,8 +7,8 @@ on:
   push:
       branches:
           - OMC
-  schedule:
-      - cron: '20 12,18 * * *'
+  #schedule:
+      #- cron: '20 12,18 * * *'
   watch:
       types: 
           - started
