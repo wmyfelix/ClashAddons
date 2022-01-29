@@ -31,7 +31,7 @@ QuickGenQX: true # generate config by subconverter with its template.
 SmartFilter: 
 ## Examples:
 #  provider1: \d*\.*\d+(?:x|X|倍|倍率)
-#  provider2: \d*\.*\d+(?:x|X|倍|倍率)|限速|Game|游戏|原生|IEPL|IPLC
+#  provider2: \d*\.*\d+(?:x|X|倍|倍率)|限速|Game|游戏|原生|IEPL|IPLC # Sequences matter.
 ##
 Rules:
   Clash:
