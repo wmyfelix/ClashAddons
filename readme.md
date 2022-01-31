@@ -1,6 +1,6 @@
 # <sub>Clash</sub>の<sup>Addons</sup>
 
-订阅: [Clash](https://clashaddons.pages.dev) | [Quantumult X](https://clashaddons.pages.dev/quanx)
+订阅: [Clash](https://clashaddons.pages.dev/clash) | [Quantumult X](https://clashaddons.pages.dev/quanx)
 
 resources are grabbed from [here](https://proxypoolss.fly.dev/).
 
