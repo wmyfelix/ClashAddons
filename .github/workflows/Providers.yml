@@ -1,18 +1,18 @@
 name: Update Provider
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
-#on:
-#  workflow_dispatch:
-#  push:
-#      branches:
-#          - OMC
-#  schedule:
-#      - cron: '20 12,18 * * *'
-#  watch:
-#     types: 
-#          - started
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+ Controls when the action will run. Workflow runs when manually triggered using the UI
+ or API.
+on:
+  workflow_dispatch:
+  push:
+      branches:
+          - OMC
+  schedule:
+      - cron: '20 12,18 * * *'
+  watch:
+     types: 
+          - started
+ A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
   UpdateProviders:
