@@ -1,9 +1,10 @@
-# Testing |
+# Testing
 
-订阅: [Clash](clashaddons.pages.dev) | [Quantumult X](clashaddons.pages.dev/quanx)
+订阅: [Clash](https://clashaddons.pages.dev) | [Quantumult X](https://clashaddons.pages.dev/quanx)
 
 resources are grabbed from [here](https://proxypoolss.fly.dev/).
-##  一些话
+
+## 一些话
 
 既然这个仓库被发现了，我也有做些说明的必要了。  
 这是我用于对来自多个提供商的订阅节点进行整合，分类，并生成订阅文件的脚本。  
