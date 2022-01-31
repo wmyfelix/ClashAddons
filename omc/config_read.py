@@ -56,7 +56,7 @@ which cause undefined / no such file errors'''  # i can use function though...
                 subc_url = "http://{}/sub?url={}&{}".format(
                     self.subc, url, locals()[x+'_args'])
                 print("{}'s {}: {}".format(provider, x, subc_url))
-                txt = requests.get(subc_url).content.decode('utf-8')
+                txt = requests.get(subc_url).content.decode('utf-8','ignore')
                 if self.check_if_available(txt):
                     os.makedirs(f'{dir}/{x}/', exist_ok=True)
                     with open(f'{dir}/{x}/' + provider, 'w+') as f:
@@ -72,7 +72,7 @@ which cause undefined / no such file errors'''  # i can use function though...
         abs_path = os.path.abspath(out_dir + "/tmp_quanx")
         subc_url = "http://{}/sub?target=quanx&url={}".format(
             self.subc, abs_path)
-        subc_txt = requests.get(subc_url).content.decode('utf-8')
+        subc_txt = requests.get(subc_url).content.decode('utf-8','ignore')
         os.remove(out_dir + "/tmp_quanx")  # remove tmp after instantiation
         os.makedirs(out_dir, exist_ok=True)
         with open(out_dir+'/'+"quanx.conf", 'w') as f:
