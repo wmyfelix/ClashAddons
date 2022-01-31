@@ -5,7 +5,7 @@ Git:
   name: FeliciaWen
 SCServer: 127.0.0.1:25500
 SCServerRemote: api.wcc.best
-Storage: https://realnet.ga
+Storage: https://clashaddons.pages.dev
 Template: ./template/clash
 ProxyProviders:
   ss: https://proxypoolss.fly.dev/ss/sub
