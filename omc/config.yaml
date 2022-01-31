@@ -1,0 +1,34 @@
+Enabled: true
+Output Dir: proxies
+Git:
+  email: felicia@realnet.ml
+  name: FeliciaWen
+SCServer: 127.0.0.1:25500
+SCServerRemote: api.wcc.best
+Storage: https://realnet.ga
+Template: ./template/clash
+ProxyProviders:
+  ss: https://proxypoolss.fly.dev/ss/sub
+  ss-sip002: https://proxypoolss.fly.dev/sip002/sub
+  ssr: https://proxypoolss.fly.dev/ssr/sub
+  vmess: https://proxypoolss.fly.dev/vmess/sub
+  trojan: https://proxypoolss.fly.dev/trojan/sub
+ClashProviders:
+  target: clash
+  list: true
+  udp: true
+  emoji: true
+  sort: true
+QuantumultXRemotes: 
+  target: quanx
+  list: true
+Exclude:
+  All: 限速|游戏|game
+  region: 限速|游戏|game
+Exclude Args: 
+  syntax: 奈飞小铺|过期时间|剩余流量|官网|机场|维护
+QuickGenQX: true
+Rules:
+  Clash:
+    head: template/clash/head.yml
+    rules: template/clash/connershua/rules.yml 
