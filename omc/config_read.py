@@ -26,10 +26,10 @@ which cause undefined / no such file errors'''  # i can use function though...
         self.parse_conf = parse_conf
 
     def check_if_available(self, content):
-        if "The following link doesn't contain any valid node info:" in content or "No nodes were found!" in content:
-            return False
-        else:
+        if 'proxies:' in content:
             return True
+        else:
+            return False
 
     def get_providers(self, dir):
         def load_args(target, provider):
