@@ -1,8 +1,8 @@
 import os
 import requests
 import yaml
+import re
 from . import classify
-
 
 class pro:
     '''use class to handle variables change, 
@@ -26,9 +26,9 @@ which cause undefined / no such file errors'''  # i can use function though...
         self.parse_conf = parse_conf
 
     def check_if_available(self, content):
-        try:
-            yaml.safe_load(content)
-        except: return False
+        num = len(re.findall('\n', content))
+        print(num)
+        if num == 0: return False
         return True
         
     def get_providers(self, dir):
