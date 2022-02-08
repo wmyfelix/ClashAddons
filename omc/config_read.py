@@ -26,11 +26,11 @@ which cause undefined / no such file errors'''  # i can use function though...
         self.parse_conf = parse_conf
 
     def check_if_available(self, content):
-        if 'proxies:' in content:
-            return True
-        else:
-            return False
-
+        try:
+            yaml.safe_load(content)
+        except: return False
+        return True
+        
     def get_providers(self, dir):
         def load_args(target, provider):
             if self.parse_conf.__contains__('Exclude Args'):
