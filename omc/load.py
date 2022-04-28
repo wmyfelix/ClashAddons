@@ -1,22 +1,11 @@
 from string import Template
-import os, requests, re
+import os
+import requests
+import re
+
+
 class Proxy:
-  '''self represents the instance of the class.'''
-  def __init__(self, exec_dir, output_path, rules = './template/clash/connershua/rules.yml', head = './template/clash/head.yaml', storage = 'https://cdn.jsdelivr.net/gh/wmyfelix/ClashAddons@OMC', template_path = './template/clash', re_exclude = '限速|游戏|game'):
-    self.storage = storage
-    self.output_path = output_path
-    self._All_exclude = re_exclude
-    if 'http' in rules: self.rules = requests.get(rules).content.decode('utf-8') 
-    else: self.rules = open(rules, 'r').read()
-    if 'rules:' not in self.rules: self.rules = 'rules:\n' + self.rules 
-    if 'http' in head: self.head = requests.get(head).content.decode('utf-8')
-    else: self.head = open(head, 'r').read()
-    names = self.__dict__
-    for x in ['proxy_groups','proxy_providers','urltest']: # dynamic variable. https://www.runoob.com/w3cnote/python-dynamic-var.html
-      template_file = template_path +'/'+ x
-      if os.path.isfile(template_file):
-        y = open(template_file).read()
-      else: print(f"template: {x} not exist.",exit())
+    '''self represents the instance of the class.'''
 
     def __init__(self, exec_dir, output_path, rules='./template/clash/connershua/rules.yml', head='./template/clash/head.yaml', storage='https://cdn.jsdelivr.net/gh/wmyfelix/ClashAddons@OMC', template_path='./template/clash', re_exclude='🇨🇳'):
         self.storage = storage
@@ -133,6 +122,6 @@ proxy-groups:
 {self.gen_each_proxies()}
 {self.rules}
     """
-    file = file.replace('\t','  ') # YAML dont support Tabulator key.
-    with open(self.output_path ,'w') as f:
-      f.write(file.strip())
+        file = file.replace('\t', '  ')  # YAML dont support Tabulator key.
+        with open(self.output_path, 'w') as f:
+            f.write(file.strip())
