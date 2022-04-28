@@ -1,5 +1,11 @@
 # <sub>Clash</sub>の<sup>Addons</sup>
+
 ![](readme.res/clashaddons.png)
+
+![](readme.res/all.png)
+**Selector**
+![](readme.res/proxy.png)
+
 ## Demo
 
 订阅: [Clash](https://clashaddons.pages.dev/clash) | [Quantumult X](https://clashaddons.pages.dev/quanx)
