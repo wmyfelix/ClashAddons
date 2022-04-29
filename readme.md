@@ -1,3 +1,11 @@
+```
+this is solely a project for me to practice python and learn asyncio
+
+don't use it, unless you want to use a piece of shit
+
+the doc bellow is solely used to prevent me from forgetting things and make the repository looks better
+```
+
 # <sub>Clash</sub>の<sup>Addons</sup>
 
 ![](readme.res/clashaddons.png)
