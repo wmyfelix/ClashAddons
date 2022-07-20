@@ -4,9 +4,11 @@ Git:
   email: felicia@realnet.ml
   name: FeliciaWen
 SCServer: 127.0.0.1:25500
-SCServerRemote: api.10101.io
+SCServerRemote: suc.usuc.cc
 Storage: https://clashaddons.pages.dev
-Template: ./template/clash
+Template: 
+  Clash: ./template/clash # Directory
+  Quantumult X: https://raw.githubusercontent.com/wmyfelix/Rules-For-Quantumult-X/main/Sample.conf # File
 ProxyProviders:
   ss: https://proxypoolss.fly.dev/ss/sub
   ss-sip002: https://proxypoolss.fly.dev/sip002/sub
@@ -23,11 +25,21 @@ QuantumultXRemotes:
   target: quanx
   list: true
 Exclude:
-  All: 限速|游戏|game
+  All: 🇨🇳
   region: 限速|游戏|game
 Exclude Args: 
   syntax: 奈飞小铺|过期时间|剩余流量|官网|机场|维护
-QuickGenQX: true
+  whitelist: 
+  - ChinaG
+Subconverter:
+  - ss
+  - ssr
+  - v2ray
+  - clash
+  - quanx
+#Group Classify: 
+#  Chi: \d*\.*\d+(?:x|X|倍|倍率)
+#  Yah: \d*\.*\d+(?:x|X|倍|倍率)|限速|Game|游戏|原生|IEPL|IPLC
 Rules:
   Clash:
     head: template/clash/head.yml
